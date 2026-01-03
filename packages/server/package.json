@@ -1,21 +1,31 @@
 {
-  "name": "@vibe-v0/server",
+  "name": "@vibe-components-lib/server",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js",
+    "dev": "nest start --watch",
+    "build": "nest build",
+    "start": "node dist/main.js",
+    "start:prod": "node dist/main.js",
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@vibe-v0/shared": "workspace:*",
-    "fastify": "^5.2.1"
+    "@ai-sdk/openai": "^3.0.2",
+    "@nestjs/common": "^11.0.17",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/platform-express": "^11.0.1",
+    "@vibe-components-lib/shared": "workspace:*",
+    "ai": "^6.0.6",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
   },
   "devDependencies": {
-    "@types/node": "^22.10.5",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "@nestjs/cli": "^11.0.0",
+    "@nestjs/schematics": "^11.0.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.7",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3"
   }
 }

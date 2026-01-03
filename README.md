@@ -111,7 +111,7 @@ Prompt → AI Generation → Component Code → Downloadable Library
 ```bash
 # Clone the repository
 git clone https://github.com/jsy-0526/vibe-components-lib.git
-cd vibe-v0
+cd vibe-components-lib
 
 # Install dependencies
 pnpm install
@@ -142,7 +142,7 @@ pnpm clean            # Remove all dist and node_modules
 ## Project Structure
 
 ```
-vibe-v0/
+vibe-components-lib/
 ├── packages/
 │   ├── app/              # Frontend application
 │   │   ├── src/

@@ -6,8 +6,8 @@
   "description": "AI-powered UI component generator for multiple frameworks",
   "scripts": {
     "dev": "pnpm -r --parallel dev",
-    "dev:app": "pnpm --filter @vibe-v0/app dev",
-    "dev:server": "pnpm --filter @vibe-v0/server dev",
+    "dev:app": "pnpm --filter @vibe-components-lib/app dev",
+    "dev:server": "pnpm --filter @vibe-components-lib/server dev",
     "build": "pnpm -r build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

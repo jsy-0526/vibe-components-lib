@@ -105,7 +105,7 @@
 ```bash
 # 克隆仓库
 git clone https://github.com/jsy-0526/vibe-components-lib.git
-cd vibe-v0
+cd vibe-components-lib
 
 # 安装依赖
 pnpm install
@@ -136,7 +136,7 @@ pnpm clean            # 删除所有 dist 和 node_modules
 ## 项目结构
 
 ```
-vibe-v0/
+vibe-components-lib/
 ├── packages/
 │   ├── app/              # 前端应用
 │   │   ├── src/
