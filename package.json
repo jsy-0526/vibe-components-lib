@@ -1,0 +1,36 @@
+{
+  "name": "vibe-components-lib",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AI-powered UI component generator for multiple frameworks",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:app": "pnpm --filter @vibe-v0/app dev",
+    "dev:server": "pnpm --filter @vibe-v0/server dev",
+    "build": "pnpm -r build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "prepare": "simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "node scripts/verify-commit.js"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.7.3",
+    "eslint": "^9.17.0",
+    "lint-staged": "^16.2.7",
+    "picocolors": "^1.1.1",
+    "simple-git-hooks": "^2.13.1"
+  }
+}
